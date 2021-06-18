@@ -9,7 +9,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <h2>My Pay Test:</h2>
   <table border="0">
-  <xsl:for-each select="SOAP-ENV:Envelope/SOAP-ENV:Body">
+  <xsl:for-each select="Envelope/Body">
     <tr>
         <label>
         <input type="text">
