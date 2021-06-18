@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+             <?xml-stylesheet type="text/xsl" href="pay.xsl"?>
+     <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+    	<SinglePaymentRequest xmlns="http://www.paygate.co.za/PayHOST">
+	    	<WebPaymentRequest>
+				 <!-- Account Details -->
+                <Account>
+                    <PayGateId>10011072130</PayGateId>
+                    <Password>test</Password>
+                </Account>
+                <!-- Customer Details -->
+                <Customer>
+                    <FirstName>deepak</FirstName>
+                    <LastName>narahare</LastName>
+                    <Email>hannoa@paygate.co.za</Email>
+                    <!-- Address Details -->
+                    <Address>
+                        <Country>ZAF</Country>
+                    </Address>
+                </Customer>
+                <VaultId>658b3c2e-d5ae-4204-abe1-a42d860769da</VaultId>
+                <PaymentType>
+                    <Method>CC</Method>
+                    <Detail>CreditCard</Detail>
+                </PaymentType>
+                <!-- Redirect Details -->
+                <Redirect>
+                    <NotifyUrl>http://localhost</NotifyUrl>
+                    <ReturnUrl>http://localhost</ReturnUrl>
+                </Redirect>
+                <!-- Order Details -->
+                <Order>
+                    <MerchantOrderId>utiliapp_41250008624_20210120104336</MerchantOrderId>
+                    <Currency>ZAR</Currency>
+                    <Amount>25000</Amount>
+                    <BillingDetails>
+                        <!-- Customer Details -->
+                        <Customer>
+                            <FirstName>deepak</FirstName>
+                            <LastName>narahare</LastName>
+                            <Email>hannoa@paygate.co.za</Email>
+                            <!-- Address Details -->
+                            <Address>
+                                <Country>ZAF</Country>
+                            </Address>
+                        </Customer>
+                        <!-- Address Details -->
+                        <Address>
+                            <Country>ZAF</Country>
+                        </Address>
+                    </BillingDetails>
+                    <Locale>en</Locale>
+                </Order>
+			</WebPaymentRequest>
+		</SinglePaymentRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
