@@ -35,4 +35,4 @@
 			</CardPaymentRequest>
 		</SinglePaymentRequest>
 	</SOAP-ENV:Body>
-</SOAP-ENV:Envelope>'
+</SOAP-ENV:Envelope>
