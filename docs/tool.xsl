@@ -17,9 +17,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
        <td><xsl:value-of select="LastName"/></td>
        <td><xsl:value-of select="Telephone"/></td>
        <td><xsl:value-of select="Email"/></td>
-       <td><xsl:value-of select="CardNumber"/></td>
-       <td><xsl:value-of select="CardExpiryDate"/></td>
-       <td><xsl:value-of select="CVV"/></td>
+       <td><xsl:value-of select="Currency"/></td>
+       <td><xsl:value-of select="Amount"/></td>
+       <td><xsl:value-of select="Country"/></td>
        <td><xsl:value-of select=""/></td>
        <td><xsl:value-of select=""/></td>
        <td><xsl:value-of select=""/></td>
@@ -28,6 +28,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
      </tr>
     </xsl:for-each>
     </table>
+    <br />
+  <input type="submit" value="Submit" />
 
      </form>
   </body>
