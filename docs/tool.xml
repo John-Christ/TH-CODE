@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="tool.xsl"?>
 
-curl --location --request POST 'https://secure.paygate.co.za/payhost/process.trans' \
---header 'Content-Type: text/xml' \
---header 'SOAPAction: SinglePayment' \
---data-raw '<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-    <SOAP-ENV:Header/>
-    <SOAP-ENV:Body>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   
+ <SOAP-ENV:Body>
     	<SinglePaymentRequest xmlns="http://www.paygate.co.za/PayHOST">
 			<CardPaymentRequest>
 				<Account>
