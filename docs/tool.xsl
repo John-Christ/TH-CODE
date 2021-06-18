@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <table border="0">
   <xsl:for-each select="SOAP-ENV:Envelope/SOAP-ENV:Body">
     <tr>
-      <label>
+  
         <input type="text">
        <td><xsl:value-of select="FirstName"/></td>
        <td><xsl:value-of select="LastName"/></td>
@@ -28,7 +28,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
         <input>
-      </label>
+   
      </tr>
     </xsl:for-each>
      </form>
