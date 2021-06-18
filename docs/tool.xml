@@ -43,10 +43,7 @@
                                 <Country>ZAF</Country>
                             </Address>
                         </Customer>
-                        <!-- Address Details -->
-                        <Address>
-                            <Country>ZAF</Country>
-                        </Address>
+                      
                     </BillingDetails>
                     <Locale>en</Locale>
                 </Order>
